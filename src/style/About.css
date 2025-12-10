@@ -1,0 +1,514 @@
+/* ========================================
+   ABOUT SECTION
+   ======================================== */
+.about {
+  padding: 100px 20px;
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   SECTION HEADER
+   ======================================== */
+.about-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 14px;
+  color: #60a5fa;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  padding: 6px 16px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
+}
+
+.about h2 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+/* ========================================
+   INTRODUCTION SECTION
+   ======================================== */
+.intro-section {
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.intro-content {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 50px;
+}
+
+.intro {
+  font-size: 20px;
+  color: #e2e8f0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.intro strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+}
+
+.intro-secondary {
+  font-size: 17px;
+  color: #94a3b8;
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   EXPERIENCE CARDS
+   ======================================== */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.experience-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.exp-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.experience-card h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.exp-subtitle {
+  font-size: 15px;
+  color: #60a5fa;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.exp-desc {
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* ========================================
+   TECHNICAL SKILLS SECTION
+   ======================================== */
+.technical-skills-section {
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.tech-skills-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.tech-icon {
+  font-size: 32px;
+}
+
+.tech-skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.tech-skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.tech-skill-badge:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.6);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.tech-skill-icon {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.tech-skill-name {
+  font-size: 16px;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+/* ========================================
+   TABS NAVIGATION
+   ======================================== */
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease 0.4s both;
+}
+
+.tab-btn {
+  padding: 12px 28px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 10px;
+  color: #94a3b8;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.5);
+  color: #60a5fa;
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  border-color: transparent;
+  color: white;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+/* ========================================
+   ACHIEVEMENTS SECTION
+   ======================================== */
+.achievements-section {
+  animation: fadeInUp 0.8s ease;
+}
+
+.achievements-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.achievements-intro h3 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.achievements-intro p {
+  font-size: 17px;
+  color: #94a3b8;
+  font-style: italic;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.achievement-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+}
+
+.achievement-card:hover::before {
+  transform: scaleX(1);
+}
+
+.achievement-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.achievement-icon {
+  font-size: 56px;
+  margin-bottom: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.achievement-card h4 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.achievement-card p {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* ========================================
+   STATS SECTION
+   ======================================== */
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.stat-box {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.stat-box:hover {
+  transform: translateY(-8px);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 12px;
+}
+
+.stat-label {
+  font-size: 16px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  .about {
+    padding: 80px 15px;
+  }
+
+  .about h2 {
+    font-size: 36px;
+  }
+
+  .intro {
+    font-size: 18px;
+  }
+
+  .intro-secondary {
+    font-size: 16px;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .tabs-container {
+    gap: 8px;
+  }
+
+  .tab-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievements-intro h3 {
+    font-size: 26px;
+  }
+
+  .tech-skills-title {
+    font-size: 24px;
+  }
+
+  .tech-skill-badge {
+    padding: 10px 20px;
+  }
+
+  .tech-skill-icon {
+    font-size: 20px;
+  }
+
+  .tech-skill-name {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .intro {
+    font-size: 16px;
+  }
+
+  .intro-secondary {
+    font-size: 14px;
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+  .exp-icon {
+    font-size: 40px;
+  }
+
+  .stat-number {
+    font-size: 36px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+
+  .tab-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+
+  .tech-skill-badge {
+    padding: 8px 16px;
+  }
+
+  .tech-skill-icon {
+    font-size: 18px;
+  }
+
+  .tech-skill-name {
+    font-size: 14px;
+  }
+
+  .tech-skills-title {
+    font-size: 22px;
+  }
+}

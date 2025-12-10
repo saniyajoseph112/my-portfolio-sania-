@@ -1,0 +1,577 @@
+/* ========================================
+   CONTACT SECTION
+   ======================================== */
+.contact {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+  padding: 100px 20px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent);
+  border-radius: 50%;
+  top: -200px;
+  right: -200px;
+  animation: pulse-glow 8s ease-in-out infinite;
+}
+
+.contact::after {
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08), transparent);
+  border-radius: 50%;
+  bottom: -150px;
+  left: -150px;
+  animation: pulse-glow 6s ease-in-out infinite reverse;
+}
+
+.contact-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* ========================================
+   SECTION HEADER
+   ======================================== */
+.contact-header {
+  text-align: center;
+  margin-bottom: 60px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 14px;
+  color: #60a5fa;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding: 8px 20px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: 20px;
+  animation: pulse-badge 2s ease-in-out infinite;
+}
+
+.contact h2 {
+  font-size: 48px;
+  background: linear-gradient(135deg, #ffffff 0%, #93c5fd 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.contact-intro {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   CONTACT METHOD CARDS
+   ======================================== */
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 60px;
+  animation: fadeInUp 1s ease 0.2s both;
+}
+
+.contact-card {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 20px;
+  padding: 36px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-hover-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.contact-card:hover .card-hover-effect {
+  opacity: 1;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 2px solid rgba(59, 130, 246, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-card:hover .contact-icon {
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  border-color: transparent;
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.5);
+}
+
+.contact-icon svg {
+  color: #60a5fa;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover .contact-icon svg {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.contact-card h3 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-card p {
+  font-size: 15px;
+  color: #94a3b8;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.contact-card:hover p {
+  color: #cbd5e1;
+}
+
+/* ========================================
+   FORM CONTAINER
+   ======================================== */
+.form-container {
+  background: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 24px;
+  padding: 48px;
+  animation: fadeInUp 1s ease 0.4s both;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.form-title {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-align: center;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.title-icon {
+  font-size: 32px;
+  animation: bounce-icon 2s ease-in-out infinite;
+}
+
+/* ========================================
+   FORM STYLING
+   ======================================== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgba(15, 23, 42, 0.6);
+  border: 2px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.input-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), transparent);
+  transition: width 0.4s ease;
+}
+
+.input-wrapper.focused {
+  border-color: rgba(59, 130, 246, 0.6);
+  background: rgba(15, 23, 42, 0.8);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.input-wrapper.focused::before {
+  width: 100%;
+}
+
+.input-wrapper svg {
+  position: absolute;
+  left: 16px;
+  color: #64748b;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.input-wrapper.focused svg {
+  color: #60a5fa;
+  transform: scale(1.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  padding: 14px 16px 14px 48px;
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  color: #e2e8f0;
+  font-family: inherit;
+  outline: none;
+  position: relative;
+  z-index: 1;
+}
+
+.textarea-wrapper {
+  align-items: flex-start;
+}
+
+.textarea-wrapper svg {
+  top: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding-top: 14px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #64748b;
+}
+
+/* ========================================
+   SUBMIT BUTTON
+   ======================================== */
+.submit-btn {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.6s ease;
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.6);
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.submit-btn svg {
+  transition: transform 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) svg {
+  transform: translateX(4px);
+}
+
+/* ========================================
+   SUCCESS MESSAGE
+   ======================================== */
+.success-message {
+  background: rgba(16, 185, 129, 0.15);
+  border: 2px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  animation: slideDown 0.5s ease, pulse-success 2s ease-in-out infinite;
+}
+
+.success-message svg {
+  flex-shrink: 0;
+}
+
+/* ========================================
+   LOADING SPINNER
+   ======================================== */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* ========================================
+   FOOTER TEXT
+   ======================================== */
+.contact-footer {
+  text-align: center;
+  margin-top: 48px;
+  animation: fadeInUp 1s ease 0.6s both;
+}
+
+.contact-footer p {
+  color: #94a3b8;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 16px 24px;
+  background: rgba(59, 130, 246, 0.05);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/* ========================================
+   ANIMATIONS
+   ======================================== */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+}
+
+@keyframes pulse-badge {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes pulse-success {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes bounce-icon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 15px;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+  }
+
+  .contact-intro {
+    font-size: 16px;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form-container {
+    padding: 32px 24px;
+  }
+
+  .form-title {
+    font-size: 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact-card {
+    padding: 28px 20px;
+  }
+
+  .contact-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .form-container {
+    padding: 24px 16px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 14px 12px 44px;
+    font-size: 14px;
+  }
+
+  .input-wrapper svg {
+    left: 12px;
+  }
+
+  .submit-btn {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+
+  .title-icon {
+    font-size: 28px;
+  }
+}
