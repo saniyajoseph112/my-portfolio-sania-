@@ -53,7 +53,7 @@ html, body {
    CONTAINER
 ================================ */
 .home-container {
-  max-width: 1300px;
+  max-width: 1800px;
   width: 100%;
   display: grid;
   grid-template-columns: minmax(280px, 420px) 1fr;

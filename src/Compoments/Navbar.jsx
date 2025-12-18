@@ -37,7 +37,7 @@ export default function Navbar(){
           <a href="#projects" onClick={closeMenu}>Projects</a>
           <a href="#contact" onClick={closeMenu}>Contact</a>
           <a 
-            href="/assets/saniyaa.pdf" 
+            href="/assets/saniya.pdf" 
             className="resume-btn" 
             download
             onClick={closeMenu}
