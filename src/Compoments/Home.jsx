@@ -149,6 +149,14 @@ export default function Home() {
         </div>
 
       </div>
+       <div
+    className="home-container"
+    style={{
+      maxWidth: "1600px",
+      margin: "0 auto",
+      padding: "0 24px"
+    }}
+  ></div>
 
       {/* Decorative Elements */}
       <div className="bg-decoration decoration-1"></div>

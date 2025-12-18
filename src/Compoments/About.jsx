@@ -40,7 +40,12 @@ export default function About() {
 
   return (
     <section className="about" id="about">
-      <div className="about-container">
+      <div className="about-container"
+        style={{
+    maxWidth: "1600px",
+    margin: "0 auto",
+    padding: "0 24px"
+  }}>
         
         {/* Header */}
         <div className="about-header-center">

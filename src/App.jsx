@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 
 import './App.css'
-// import Navbar from './Compoments/Navbar';
+import Navbar from './Compoments/Navbar';
 import Home from './Compoments/Home';
 import About from './Compoments/About';
 import Projects from './Compoments/Project';
@@ -15,7 +15,7 @@ function App() {
     <>
       <div>
 
-        {/* <Navbar /> */}
+        <Navbar />
       <main>
         <Home />
         <About />

@@ -65,7 +65,13 @@ export default function Projects() {
 
   return (
     <section id="projects" className="projects">
-      <div className="projects-wrapper">
+      <div className="projects-wrapper"
+       style={{
+    maxWidth: "1600px",
+    margin: "0 auto",
+    padding: "0 24px"
+  }}
+>
         
         {/* Section Header */}
         <div className="projects-header">
