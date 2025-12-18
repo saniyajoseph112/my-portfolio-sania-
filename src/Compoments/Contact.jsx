@@ -72,15 +72,13 @@ export default function Contact() {
 
   return (
     <section id="contact" className="contact">
-      <div
-  className="contact-container"
-  style={{
-    maxWidth: "1600px",
-    margin: "0 auto",
-    padding: "0 24px"
-  }}
-></div>
-      <div className="contact-container">
+  
+      <div className="contact-container"
+       style={{
+      maxWidth: "1600px",
+      margin: "0 auto",
+      padding: "0 24px"
+    }}>
         
         {/* Header */}
         <div className="contact-header">

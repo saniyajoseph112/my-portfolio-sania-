@@ -40,7 +40,12 @@ export default function Home() {
 
   return (
     <section id="home" className="home">
-      <div className="home-container">
+      <div className="home-container"
+        style={{
+      maxWidth: "1800px",
+      margin: "0 auto",
+      padding: "0 24px"
+    }}>
         
         {/* Profile Section */}
         <div className="home-image-section">
@@ -149,14 +154,7 @@ export default function Home() {
         </div>
 
       </div>
-       <div
-    className="home-container"
-    style={{
-      maxWidth: "1600px",
-      margin: "0 auto",
-      padding: "0 24px"
-    }}
-  ></div>
+       
 
       {/* Decorative Elements */}
       <div className="bg-decoration decoration-1"></div>
